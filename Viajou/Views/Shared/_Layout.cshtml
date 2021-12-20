@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Viajou</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body class="vh-100">
+    <header>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand font-weight-bolder" href="#">Viajar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon bg-transparent"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+    <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+                <a class="nav-link" asp-controller="Home" asp-action="Index" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" asp-controller="Destino" asp-action="Index">Destinos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" asp-controller="Cliente" asp-action="Index">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" asp-controller="Venda" asp-action="Index">Vendas</a>
+              </li>
+              <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" asp-controller="Contato" asp-action="Index">Contato</a>
+                  </li>
+    </ul>
+  
+  </div>
+</nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="d-flex justify-content-center mb-0">
+        <div>
+            <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center">
+                <li><a class="text-white" href="https://twitter.com/naassompedro" target="_blank">Twitter</a></li>
+                <li><a class="text-white" href="https://www.linkedin.com/in/naassom-pedro-4aa00995/">Linkedin</a></li>
+                <li><a class="text-white" href="./contato.html">E-mail</a></li>
+                <li><a class="text-white">&copy Naassom Pedro - 2021</a></li>
+                
+            </ul>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

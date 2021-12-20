@@ -1,0 +1,43 @@
+﻿:root {
+    --color1: #ffffff;
+    --color2: #000000;
+    --color3: #567ECA; /* cor primaria*/
+    --color4: #A6C6F1; /* cor secundaria*/
+}
+
+#texto-home {
+    margin-top: 80px;
+}
+
+.navbar {
+    background-color: var(--color3) !important;
+}
+
+.navbar-toggler {
+    border: 0px;
+}
+
+.navbar-toggler-icon {
+    background-color: var(--color1);
+}
+
+.navbar ul li a {
+    color: var(--color1) !important;
+}
+
+.navbar-brand {
+    color: var(--color1) !important;
+}
+
+#homee {
+    background-image: url("~/img/airport.jpg") !important;
+    /*background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;*/
+}
+
+footer {
+    background-color: var(--color3) !important;
+}
